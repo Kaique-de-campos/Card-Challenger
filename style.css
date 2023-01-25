@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+  --cor1: rgb(247, 233, 222);
+  --cor2: rgb(61, 129, 102);
+  --cor3: rgb(117, 115, 115);
+  --fonte1: 'Montserrat'; 
+  --fonte2: 'Fraunces';
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-size: 62.5%;
+    background: var(--cor1);
+    height: 100vh;
+    width: 100vw;
+}
+
+section{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+picture{
+
+    max-height: 600px;
+
+}
+picture > img{
+
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.274);
+    border-radius: 15px 0 0 15px;
+
+}
+.conteudo{
+
+    height: 100vh;
+    max-width: 350px;
+    max-height: 600px;
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+    padding: 30px;
+    box-shadow: 6px 4px 9px rgb(0 0 0 / 27%);
+
+}
+.conteudo .txtperfume{
+
+    margin-bottom: 20px;
+    letter-spacing: .5rem;
+    color: var(--cor3);
+    font: normal 1.2rem var(--fonte1);
+    font-variant: small-caps;
+
+}
+.conteudo h1{
+
+    margin-bottom: 20px;
+    font: normal 3rem var(--fonte2);
+
+}
+.conteudo .ptxt{
+
+    margin-bottom: 20px;
+    color: var(--cor3);
+    font: normal 1rem var(--fonte1);
+    line-height: 2rem;
+
+
+}
+.conteudo h2{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--cor2);
+    font: bolder 2rem var(--fonte2);
+
+}
+.conteudo h2 > span{
+
+    margin-left: 10px;
+    color: var(--cor3);
+    font: normal .8rem var(--fonte2);
+    text-decoration: line-through;
+
+}
+
+.add-to-cart{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--cor2);
+
+}
+.add-to-cart:hover{
+
+    background-color:  rgba(111, 167, 111, 0.582);
+    cursor: pointer;
+    animation-duration: .9s;
+    transition-duration: 1s;
+
+}
+.add-to-cart span{
+ 
+    margin-left: 4px;
+    color: white;
+    font: normal 1rem var(--fonte1);
+
+}
+@media (max-width: 768px){
+
+    section{
+
+        flex-direction: column;
+    
+    }
+    picture > img{
+
+        border-radius: 15px 15px 0 0;
+
+    }
+    .conteudo{
+
+        max-width: 370px;
+        max-height: 533px;
+        border-radius: 0 0 15px 15px;
+
+    }
+    .conteudo h1{
+
+        font: bold 2.7rem var(--fonte2);
+
+    }
+
+}
+@media (max-width: 400px){
+
+    section{
+
+        flex-direction: column;
+    
+    }
+    picture > img{
+
+        border-radius: 15px 15px 0 0;
+
+    }
+    .conteudo{
+
+        max-width: 320px;
+        max-height: 570px;
+        border-radius: 0 0 15px 15px;
+
+    }
+    .conteudo h1{
+
+        font: bold 2.7rem var(--fonte2);
+
+    }
+
+}
